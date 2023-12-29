@@ -31,7 +31,7 @@ body {
 hr {
   width: 100%;
   position: absolute;
-  border: 1px solid var(--item-color);
+  border: calc(0.3vh) solid var(--item-color);
 }
 
 .container {
@@ -60,7 +60,7 @@ hr {
   height: calc(7vh);
   font-size: 1rem;
   outline: none;
-  border: 1px solid var(--item-color);
+  border: calc(0.3vh) solid var(--item-color);
   background: transparent;
   color: var(--item-color);
   border-radius: calc(3.5vh);
@@ -87,7 +87,7 @@ input[type="submit"] {
   margin: 0 auto;
   color: var(--item-color);
   background: transparent;
-  border: 1px solid var(--item-color);
+  border: calc(0.3vh) solid var(--item-color);
 }
 
 .row {
@@ -110,7 +110,7 @@ input[type="checkbox"]::before {
   display: inline-block;
   width: calc(8vh);
   aspect-ratio: 1 / 1;
-  border: 1px solid var(--item-color);
+  border: calc(0.3vh) solid var(--item-color);
   background-color: transparent;
   border-radius: calc(1vh);
 }
@@ -130,10 +130,4 @@ svg {
   position: fixed;
   bottom: calc(100% - 39%);
   right: 10px;
-}
-
-@media screen and (min-width: 361px) {
-  hr, .length, input[type="submit"], input[type="checkbox"]::before {
-    border: 5px solid var(--item-color);
-  }
 }
