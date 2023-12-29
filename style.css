@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+:root {
+  --item-color: #69F0AE;
+  --text-color: #00FFFF;
+  --bg-color: #000;
+}
+
+body {
+  background: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.status {
+  height: 10vh;
+  color: var(--item-color);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  width: 100%;
+  position: absolute;
+  border: 1px solid var(--item-color);
+}
+
+.container {
+  width: 100%;
+  height: 30vh;
+  color: var(--text-color);
+  overflow: auto;
+  position: relative;
+}
+
+.password {
+  text-align: start;
+  word-break: break-all;
+  padding:  40px;
+  text-transform: none;
+  user-select: auto;
+}
+
+.top {
+  width: 100vw;
+  height: 40vh;
+}
+
+.length {
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid var(--item-color);
+  background: transparent;
+  color: var(--item-color);
+  border-radius: 25px;
+}
+
+input::placeholder,
+label {
+  color: var(--item-color);
+}
+
+form {
+  width: 100%;
+  height: 60vh;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input[type="submit"] {
+  width: 50%;
+  height: 35px;
+  margin: 0 auto;
+  color: var(--item-color);
+  background: transparent;
+  border: 1px solid var(--item-color);
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  height: 50px;
+  appearance: none;
+}
+
+/* Create a custom design */
+input[type="checkbox"]::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--item-color);
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/* Style for checked state */
+input[type="checkbox"]:checked::before {
+  content: '\2713';
+  font-size: 30px;
+  color: var(--item-color);
+  text-align: center;
+  line-height: 50px;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: calc(100% - 39%);
+  right: 10px;
+}
